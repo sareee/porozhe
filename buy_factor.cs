@@ -107,6 +107,8 @@ namespace فروش
             string code_cursor = textBox2.Text;
             string time = textBox4.Text;
             string comment = textBox15.Text;
+            factor f = new factor();
+           // f.save();
         }
     }
 }

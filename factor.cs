@@ -64,7 +64,7 @@ namespace فروش
         }
         public void save_buy_factor(int number, string code_kala, string name_kala, string mark_kala, string date_kala, string date, string code_cursor, string time, string code_gerner, string comment)
         {
-            string sql = "";
+            string sql = "insert into buy-factor values("+number+",'"+code_kala+"','"+name_kala+"','"+mark_kala+"')";
             connect(sql);
         }
         public void cost(string a, string b, string c, string d)
