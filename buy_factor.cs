@@ -109,6 +109,7 @@ namespace فروش
             string comment = textBox15.Text;
             factor f = new factor();
            // f.save();
+            int l;
         }
     }
 }
