@@ -1,0 +1,513 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E677ECF9-9931-41A2-A823-E3BC31824A7F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>فروش</RootNamespace>
+    <AssemblyName>فروش</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BPersianCalender">
+      <HintPath>..\..\..\..\..\..\dll_component\BPersianCalender.dll</HintPath>
+    </Reference>
+    <Reference Include="PersianDate">
+      <HintPath>..\..\..\..\..\Desktop\PersianDate\PersianDate\bin\Debug\PersianDate.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="add_chek_pardakhti.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="add_chek_pardakhti.Designer.cs">
+      <DependentUpon>add_chek_pardakhti.cs</DependentUpon>
+    </Compile>
+    <Compile Include="add_kala_buy_factor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="add_kala_buy_factor.Designer.cs">
+      <DependentUpon>add_kala_buy_factor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="aqsat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="aqsat.Designer.cs">
+      <DependentUpon>aqsat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="buy_factor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="buy_factor.Designer.cs">
+      <DependentUpon>buy_factor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="chek.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="chek.Designer.cs">
+      <DependentUpon>chek.cs</DependentUpon>
+    </Compile>
+    <Compile Include="chek_pardakhti.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="chek_pardakhti.Designer.cs">
+      <DependentUpon>chek_pardakhti.cs</DependentUpon>
+    </Compile>
+    <Compile Include="customer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="customer.Designer.cs">
+      <DependentUpon>customer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="factor.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="daryaft.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="daryaft.Designer.cs">
+      <DependentUpon>daryaft.cs</DependentUpon>
+    </Compile>
+    <Compile Include="garner.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="garner.Designer.cs">
+      <DependentUpon>garner.cs</DependentUpon>
+    </Compile>
+    <Compile Include="garner_checking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="garner_checking.Designer.cs">
+      <DependentUpon>garner_checking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gozaresh.cs" />
+    <Compile Include="hazine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="hazine.Designer.cs">
+      <DependentUpon>hazine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="information_customer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="information_customer.Designer.cs">
+      <DependentUpon>information_customer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kala.cs" />
+    <Compile Include="login.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="qest_bandi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="qest_bandi.Designer.cs">
+      <DependentUpon>qest_bandi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sabt_hazine.cs" />
+    <Compile Include="sal_center.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sal_center.Designer.cs">
+      <DependentUpon>sal_center.cs</DependentUpon>
+    </Compile>
+    <Compile Include="soud.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="soud.Designer.cs">
+      <DependentUpon>soud.cs</DependentUpon>
+    </Compile>
+    <Compile Include="انتخاب کالا.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="انتخاب کالا.Designer.cs">
+      <DependentUpon>انتخاب کالا.cs</DependentUpon>
+    </Compile>
+    <Compile Include="تغییر نام کاربری و رمز عبور.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="تغییر نام کاربری و رمز عبور.Designer.cs">
+      <DependentUpon>تغییر نام کاربری و رمز عبور.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ثبت کالا.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ثبت کالا.Designer.cs">
+      <DependentUpon>ثبت کالا.cs</DependentUpon>
+    </Compile>
+    <Compile Include="حذف کالا.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="حذف کالا.Designer.cs">
+      <DependentUpon>حذف کالا.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sal_factor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sal_factor.Designer.cs">
+      <DependentUpon>sal_factor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="فروشDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>فروشDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="فروشDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>فروشDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="فروشDataSet10.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>فروشDataSet10.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="فروشDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>فروشDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="فروشDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>فروشDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="فروشDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>فروشDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="فروشDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>فروشDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="فروشDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>فروشDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="فروشDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>فروشDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="فروشDataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>فروشDataSet8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="فروشDataSet9.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>فروشDataSet9.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="منو.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="منو.Designer.cs">
+      <DependentUpon>منو.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="add_chek_pardakhti.resx">
+      <DependentUpon>add_chek_pardakhti.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="add_kala_buy_factor.resx">
+      <DependentUpon>add_kala_buy_factor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="aqsat.resx">
+      <DependentUpon>aqsat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="buy_factor.resx">
+      <DependentUpon>buy_factor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="chek.resx">
+      <DependentUpon>chek.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="chek_pardakhti.resx">
+      <DependentUpon>chek_pardakhti.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="customer.resx">
+      <DependentUpon>customer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="daryaft.resx">
+      <DependentUpon>daryaft.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="garner.resx">
+      <DependentUpon>garner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="garner_checking.resx">
+      <DependentUpon>garner_checking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hazine.resx">
+      <DependentUpon>hazine.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="information_customer.resx">
+      <DependentUpon>information_customer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="qest_bandi.resx">
+      <DependentUpon>qest_bandi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sal_center.resx">
+      <DependentUpon>sal_center.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="soud.resx">
+      <DependentUpon>soud.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="انتخاب کالا.resx">
+      <DependentUpon>انتخاب کالا.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="تغییر نام کاربری و رمز عبور.resx">
+      <DependentUpon>تغییر نام کاربری و رمز عبور.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ثبت کالا.resx">
+      <DependentUpon>ثبت کالا.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="حذف کالا.resx">
+      <DependentUpon>حذف کالا.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sal_factor.resx">
+      <DependentUpon>sal_factor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="منو.resx">
+      <DependentUpon>منو.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="فروشDataSet.xsc">
+      <DependentUpon>فروشDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="فروشDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>فروشDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="فروشDataSet.xss">
+      <DependentUpon>فروشDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="فروشDataSet1.xsc">
+      <DependentUpon>فروشDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="فروشDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>فروشDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="فروشDataSet1.xss">
+      <DependentUpon>فروشDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="فروشDataSet10.xsc">
+      <DependentUpon>فروشDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="فروشDataSet10.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>فروشDataSet10.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="فروشDataSet10.xss">
+      <DependentUpon>فروشDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="فروشDataSet2.xsc">
+      <DependentUpon>فروشDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="فروشDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>فروشDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="فروشDataSet2.xss">
+      <DependentUpon>فروشDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="فروشDataSet3.xsc">
+      <DependentUpon>فروشDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="فروشDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>فروشDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="فروشDataSet3.xss">
+      <DependentUpon>فروشDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="فروشDataSet4.xsc">
+      <DependentUpon>فروشDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="فروشDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>فروشDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="فروشDataSet4.xss">
+      <DependentUpon>فروشDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="فروشDataSet5.xsc">
+      <DependentUpon>فروشDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="فروشDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>فروشDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="فروشDataSet5.xss">
+      <DependentUpon>فروشDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="فروشDataSet6.xsc">
+      <DependentUpon>فروشDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="فروشDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>فروشDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="فروشDataSet6.xss">
+      <DependentUpon>فروشDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="فروشDataSet7.xsc">
+      <DependentUpon>فروشDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="فروشDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>فروشDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="فروشDataSet7.xss">
+      <DependentUpon>فروشDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="فروشDataSet8.xsc">
+      <DependentUpon>فروشDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="فروشDataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>فروشDataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="فروشDataSet8.xss">
+      <DependentUpon>فروشDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="فروشDataSet9.xsc">
+      <DependentUpon>فروشDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="فروشDataSet9.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>فروشDataSet9.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="فروشDataSet9.xss">
+      <DependentUpon>فروشDataSet9.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\box.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\settings.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refresh.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\badge_multiply.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Musett-Aqcua-Finder.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bill_of_document.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\عسثغغ.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\customers.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lists.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back_2.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\document.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\money_bag.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coins.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dollars.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

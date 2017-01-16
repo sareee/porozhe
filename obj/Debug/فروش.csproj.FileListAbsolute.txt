@@ -1,0 +1,92 @@
+c:\users\mahsa\documents\visual studio 2013\Projects\فروش\فروش\bin\Debug\فروش.exe.config
+C:\Users\MAHSA\documents\visual studio 2013\Projects\فروش\فروش\bin\Debug\فروش.exe
+C:\Users\MAHSA\documents\visual studio 2013\Projects\فروش\فروش\bin\Debug\فروش.pdb
+C:\Users\MAHSA\documents\visual studio 2013\Projects\فروش\فروش\bin\Debug\PersianDate.dll
+C:\Users\MAHSA\documents\visual studio 2013\Projects\فروش\فروش\bin\Debug\PopupControl.dll
+C:\Users\MAHSA\documents\visual studio 2013\Projects\فروش\فروش\bin\Debug\PersianDate.pdb
+C:\Users\MAHSA\documents\visual studio 2013\Projects\فروش\فروش\bin\Debug\PopupControl.xml
+C:\Users\MAHSA\documents\visual studio 2013\Projects\فروش\فروش\obj\Debug\فروش.csprojResolveAssemblyReference.cache
+C:\Users\MAHSA\documents\visual studio 2013\Projects\فروش\فروش\obj\Debug\فروش.Form1.resources
+C:\Users\MAHSA\documents\visual studio 2013\Projects\فروش\فروش\obj\Debug\فروش.Properties.Resources.resources
+C:\Users\MAHSA\documents\visual studio 2013\Projects\فروش\فروش\obj\Debug\فروش.ثبت_کالا.resources
+C:\Users\MAHSA\documents\visual studio 2013\Projects\فروش\فروش\obj\Debug\فروش.منو.resources
+C:\Users\MAHSA\documents\visual studio 2013\Projects\فروش\فروش\obj\Debug\فروش.csproj.GenerateResource.Cache
+C:\Users\MAHSA\documents\visual studio 2013\Projects\فروش\فروش\obj\Debug\فروش.exe
+C:\Users\MAHSA\documents\visual studio 2013\Projects\فروش\فروش\obj\Debug\فروش.pdb
+C:\Users\MAHSA\documents\visual studio 2013\Projects\فروش\فروش\obj\Debug\فروش.تغییر_نام_کاربری_و_رمز_عبور.resources
+C:\Users\MAHSA\documents\visual studio 2013\Projects\فروش\فروش\obj\Debug\فروش.حذف_کالا.resources
+G:\فروش\فروش\bin\Debug\فروش.exe.config
+G:\فروش\فروش\obj\Debug\فروش.exe
+G:\فروش\فروش\obj\Debug\فروش.pdb
+C:\Users\MAHSA\Desktop\flash\فروش\فروش\bin\Debug\فروش.exe.config
+C:\Users\MAHSA\Desktop\flash\فروش\فروش\bin\Debug\فروش.exe
+C:\Users\MAHSA\Desktop\flash\فروش\فروش\bin\Debug\فروش.pdb
+C:\Users\MAHSA\Desktop\flash\فروش\فروش\obj\Debug\فروش.customer.resources
+C:\Users\MAHSA\Desktop\flash\فروش\فروش\obj\Debug\فروش.Form1.resources
+C:\Users\MAHSA\Desktop\flash\فروش\فروش\obj\Debug\فروش.garner.resources
+C:\Users\MAHSA\Desktop\flash\فروش\فروش\obj\Debug\فروش.information_customer.resources
+C:\Users\MAHSA\Desktop\flash\فروش\فروش\obj\Debug\فروش.Properties.Resources.resources
+C:\Users\MAHSA\Desktop\flash\فروش\فروش\obj\Debug\form_resive.Form1.resources
+C:\Users\MAHSA\Desktop\flash\فروش\فروش\obj\Debug\فروش.sal_center.resources
+C:\Users\MAHSA\Desktop\flash\فروش\فروش\obj\Debug\فروش.انتخاب_کالا.resources
+C:\Users\MAHSA\Desktop\flash\فروش\فروش\obj\Debug\فروش.تغییر_نام_کاربری_و_رمز_عبور.resources
+C:\Users\MAHSA\Desktop\flash\فروش\فروش\obj\Debug\فروش.ثبت_کالا.resources
+C:\Users\MAHSA\Desktop\flash\فروش\فروش\obj\Debug\فروش.حذف_کالا.resources
+C:\Users\MAHSA\Desktop\flash\فروش\فروش\obj\Debug\فروش.فاکتور_خرید.resources
+C:\Users\MAHSA\Desktop\flash\فروش\فروش\obj\Debug\فروش.منو.resources
+C:\Users\MAHSA\Desktop\flash\فروش\فروش\obj\Debug\فروش.csproj.GenerateResource.Cache
+C:\Users\MAHSA\Desktop\flash\فروش\فروش\obj\Debug\فروش.exe
+C:\Users\MAHSA\Desktop\flash\فروش\فروش\obj\Debug\فروش.pdb
+C:\Users\MAHSA\Desktop\copy new\فروش\فروش\bin\Debug\فروش.exe.config
+C:\Users\MAHSA\Desktop\copy new\فروش\فروش\obj\Debug\فروش.exe
+C:\Users\MAHSA\Desktop\copy new\فروش\فروش\obj\Debug\فروش.pdb
+C:\Users\MAHSA\Desktop\copy new\فروش\فروش\bin\Debug\فروش.exe
+C:\Users\MAHSA\Desktop\copy new\فروش\فروش\bin\Debug\فروش.pdb
+C:\Users\MAHSA\Desktop\copy new\فروش\فروش\obj\Debug\فروش.csprojResolveAssemblyReference.cache
+C:\Users\MAHSA\Desktop\copy new\فروش\فروش\obj\Debug\فروش.customer.resources
+C:\Users\MAHSA\Desktop\copy new\فروش\فروش\obj\Debug\فروش.Form1.resources
+C:\Users\MAHSA\Desktop\copy new\فروش\فروش\obj\Debug\فروش.garner.resources
+C:\Users\MAHSA\Desktop\copy new\فروش\فروش\obj\Debug\فروش.information_customer.resources
+C:\Users\MAHSA\Desktop\copy new\فروش\فروش\obj\Debug\فروش.Properties.Resources.resources
+C:\Users\MAHSA\Desktop\copy new\فروش\فروش\obj\Debug\فروش.sal_center.resources
+C:\Users\MAHSA\Desktop\copy new\فروش\فروش\obj\Debug\فروش.انتخاب_کالا.resources
+C:\Users\MAHSA\Desktop\copy new\فروش\فروش\obj\Debug\فروش.تغییر_نام_کاربری_و_رمز_عبور.resources
+C:\Users\MAHSA\Desktop\copy new\فروش\فروش\obj\Debug\فروش.ثبت_کالا.resources
+C:\Users\MAHSA\Desktop\copy new\فروش\فروش\obj\Debug\فروش.حذف_کالا.resources
+C:\Users\MAHSA\Desktop\copy new\فروش\فروش\obj\Debug\فروش.فاکتور_خرید.resources
+C:\Users\MAHSA\Desktop\copy new\فروش\فروش\obj\Debug\فروش.منو.resources
+C:\Users\MAHSA\Desktop\copy new\فروش\فروش\obj\Debug\فروش.csproj.GenerateResource.Cache
+C:\Users\MAHSA\Desktop\copy new\فروش\فروش\obj\Debug\فروش.daryaft.resources
+C:\Users\MAHSA\Desktop\copy new\فروش\فروش\obj\Debug\فروش.garner_checking.resources
+C:\Users\MAHSA\Desktop\copy new\فروش\فروش\obj\Debug\فروش.soud.resources
+C:\Users\MAHSA\Desktop\کپی16دی\فروش\فروش\bin\Debug\فروش.exe.config
+C:\Users\MAHSA\Desktop\کپی16دی\فروش\فروش\obj\Debug\فروش.exe
+C:\Users\MAHSA\Desktop\کپی16دی\فروش\فروش\obj\Debug\فروش.pdb
+C:\Users\MAHSA\Desktop\کپی16دی\فروش\فروش\obj\Debug\فروش.csprojResolveAssemblyReference.cache
+C:\Users\MAHSA\Desktop\کپی16دی\فروش\فروش\obj\Debug\فروش.customer.resources
+C:\Users\MAHSA\Desktop\کپی16دی\فروش\فروش\obj\Debug\فروش.Form1.resources
+C:\Users\MAHSA\Desktop\کپی16دی\فروش\فروش\obj\Debug\فروش.daryaft.resources
+C:\Users\MAHSA\Desktop\کپی16دی\فروش\فروش\obj\Debug\فروش.garner.resources
+C:\Users\MAHSA\Desktop\کپی16دی\فروش\فروش\obj\Debug\فروش.garner_checking.resources
+C:\Users\MAHSA\Desktop\کپی16دی\فروش\فروش\obj\Debug\فروش.information_customer.resources
+C:\Users\MAHSA\Desktop\کپی16دی\فروش\فروش\obj\Debug\فروش.Properties.Resources.resources
+C:\Users\MAHSA\Desktop\کپی16دی\فروش\فروش\obj\Debug\فروش.sal_center.resources
+C:\Users\MAHSA\Desktop\کپی16دی\فروش\فروش\obj\Debug\فروش.soud.resources
+C:\Users\MAHSA\Desktop\کپی16دی\فروش\فروش\obj\Debug\فروش.انتخاب_کالا.resources
+C:\Users\MAHSA\Desktop\کپی16دی\فروش\فروش\obj\Debug\فروش.تغییر_نام_کاربری_و_رمز_عبور.resources
+C:\Users\MAHSA\Desktop\کپی16دی\فروش\فروش\obj\Debug\فروش.ثبت_کالا.resources
+C:\Users\MAHSA\Desktop\کپی16دی\فروش\فروش\obj\Debug\فروش.حذف_کالا.resources
+C:\Users\MAHSA\Desktop\کپی16دی\فروش\فروش\obj\Debug\فروش.فاکتور_خرید.resources
+C:\Users\MAHSA\Desktop\کپی16دی\فروش\فروش\obj\Debug\فروش.منو.resources
+C:\Users\MAHSA\Desktop\کپی16دی\فروش\فروش\obj\Debug\فروش.csproj.GenerateResource.Cache
+C:\Users\MAHSA\Desktop\کپی16دی\فروش\فروش\bin\Debug\فروش.exe
+C:\Users\MAHSA\Desktop\کپی16دی\فروش\فروش\bin\Debug\فروش.pdb
+C:\Users\MAHSA\Desktop\کپی16دی\فروش\فروش\bin\Debug\BPersianCalender.dll
+C:\Users\MAHSA\Desktop\کپی16دی\فروش\فروش\obj\Debug\فروش.hazine.resources
+C:\Users\MAHSA\Desktop\کپی16دی\فروش\فروش\obj\Debug\فروش.chek.resources
+C:\Users\MAHSA\Desktop\کپی16دی\فروش\فروش\obj\Debug\فروش.chek_pardakhti.resources
+C:\Users\MAHSA\Desktop\کپی16دی\فروش\فروش\obj\Debug\فروش.aqsat.resources
+C:\Users\MAHSA\Desktop\کپی16دی\فروش\فروش\obj\Debug\فروش.add_chek_pardakhti.resources
+C:\Users\MAHSA\Desktop\کپی16دی\فروش\فروش\obj\Debug\فروش.add_kala_buy_factor.resources
+C:\Users\MAHSA\Desktop\کپی16دی\فروش\فروش\obj\Debug\فروش.buy_factor.resources
+C:\Users\MAHSA\Desktop\کپی16دی\فروش\فروش\obj\Debug\فروش.qest_bandi.resources
