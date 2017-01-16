@@ -12,9 +12,9 @@ namespace فروش
 {
     public partial class aqsat : Form
     {
+        public int flag;
         public aqsat()
-        {
-
+        {/////select*
             comboBox1.Items.Add("نام مشتری");
             comboBox1.Items.Add("شماره فاکتور");
             comboBox1.Items.Add("تاریخ سررسید");
@@ -22,7 +22,7 @@ namespace فروش
 
         private void button1_Click(object sender, EventArgs e)
         {
-           // flag++;
+            flag++;
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)

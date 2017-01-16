@@ -15,7 +15,7 @@ namespace فروش
         public string code_c, name_c, shomare_faktor;
         public double cost,y;
         public int number;
-        public daryaft(ref string code_cursor,ref string name_cursor,ref double cost,ref int number,ref string shomare_faktor)
+        public daryaft(ref string code_cursor,ref string name_cursor,ref int cost,ref int number,ref string shomare_faktor)
         {
             InitializeComponent();
             this.code_c = code_cursor;
@@ -123,9 +123,9 @@ namespace فروش
             string tasvie = numericUpDown1.Value.ToString();
             string date = dateTimePicker1.Text;
             string code_cursor = textBox12.Text;
-            string porsant = textBox14.Text;
-            string sql = "insert into resive_cost values ("+number+","+takhfif+","+naqdi+","+kartkhan+","+nesiye+","+digari+","+qesti+","+baqi+",'"+sanduq+"','"+hesab_code+"','"+number_kart+"','"+comment+"','"+tasvie+"','"+date+"','"+code_cursor+"','"+porsant+"')";
-            connect(sql);
+         //   string porsant = textBox14.Text;
+            //string sql = "insert into resive_cost values ("+number+","+takhfif+","+naqdi+","+kartkhan+","+nesiye+","+digari+","+qesti+","+baqi+",'"+sanduq+"','"+hesab_code+"','"+number_kart+"','"+comment+"','"+tasvie+"','"+date+"','"+code_cursor+"','"+porsant+"')";
+           // connect(sql);
           //  double s1=0d;
             
             MessageBox.Show("ok");      
@@ -157,29 +157,29 @@ namespace فروش
 
         private void button6_Click(object sender, EventArgs e)
         {
-            string shomare_faktor = "";
-            //daryaft d = new daryaft(ref shomare_faktor);
-            فاکتور_خرید f = new فاکتور_خرید(ref shomare_faktor);
-            shomare_faktor = f.shomare_faktr;
-           double sud = 0d;
-            soud s = new soud();
-            s.ShowDialog();
-            sud = s.sud;
-            textBox14.Text = Convert.ToString(sud);
+           // string shomare_faktor = "";
+           // //daryaft d = new daryaft(ref shomare_faktor);
+           // فاکتور_خرید f = new فاکتور_خرید(ref shomare_faktor);
+           // shomare_faktor = f.shomare_faktr;
+           ////double sud = 0d;
+           //// soud s = new soud();
+           //// s.ShowDialog();
+           //// sud = s.sud;
+           //// textBox14.Text = Convert.ToString(sud);
         }
 
         private void button7_Click(object sender, EventArgs e)
         {
-            double s1;
-            soud ss = new soud();
-            s1 = ss.sud;
-            y = cost + s1;
+            //double s1;
+            //soud ss = new soud();
+            //s1 = ss.sud;
+            //y = cost + s1;
             int shomare_faktor_i = Convert.ToInt32(shomare_faktor);
             code_c = textBox1.Text;
             name_c = textBox16.Text;
             //qest_bandi q = new qest_bandi(ref shomare_faktor_i, ref y, ref  code_cursor, ref name_c);
             //qest_bandi q = new qest_bandi(ref shomare_faktor_i, ref y, ref code_cursor, ref name_cursor);
-            qest_bandi q = new qest_bandi(ref shomare_faktor_i, ref y, ref code_c, ref name_c);
+            qest_bandi q = new qest_bandi(ref shomare_faktor_i, ref cost, ref code_c, ref name_c);
             q.ShowDialog();
            // qest_bandi q = new qest_bandi(ref number,ref y,ref code_c,ref name_c);
           //  q.ShowDialog();

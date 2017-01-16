@@ -30,7 +30,9 @@
         {
             this.label11 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.button10 = new System.Windows.Forms.Button();
             this.textBox18 = new System.Windows.Forms.TextBox();
+            this.button9 = new System.Windows.Forms.Button();
             this.textBox17 = new System.Windows.Forms.TextBox();
             this.label25 = new System.Windows.Forms.Label();
             this.textBox13 = new System.Windows.Forms.TextBox();
@@ -40,9 +42,6 @@
             this.button7 = new System.Windows.Forms.Button();
             this.textBox15 = new System.Windows.Forms.TextBox();
             this.label23 = new System.Windows.Forms.Label();
-            this.button6 = new System.Windows.Forms.Button();
-            this.textBox14 = new System.Windows.Forms.TextBox();
-            this.label22 = new System.Windows.Forms.Label();
             this.textBox12 = new System.Windows.Forms.TextBox();
             this.label21 = new System.Windows.Forms.Label();
             this.textBox11 = new System.Windows.Forms.TextBox();
@@ -79,8 +78,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox16 = new System.Windows.Forms.TextBox();
-            this.button10 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
@@ -109,9 +106,6 @@
             this.groupBox2.Controls.Add(this.button7);
             this.groupBox2.Controls.Add(this.textBox15);
             this.groupBox2.Controls.Add(this.label23);
-            this.groupBox2.Controls.Add(this.button6);
-            this.groupBox2.Controls.Add(this.textBox14);
-            this.groupBox2.Controls.Add(this.label22);
             this.groupBox2.Controls.Add(this.textBox12);
             this.groupBox2.Controls.Add(this.label21);
             this.groupBox2.Controls.Add(this.textBox11);
@@ -147,12 +141,32 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
             // 
+            // button10
+            // 
+            this.button10.Image = global::فروش.Properties.Resources.Musett_Aqcua_Finder;
+            this.button10.Location = new System.Drawing.Point(0, 68);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(41, 27);
+            this.button10.TabIndex = 45;
+            this.button10.UseVisualStyleBackColor = true;
+            this.button10.Click += new System.EventHandler(this.button10_Click);
+            // 
             // textBox18
             // 
             this.textBox18.Location = new System.Drawing.Point(40, 69);
             this.textBox18.Name = "textBox18";
             this.textBox18.Size = new System.Drawing.Size(142, 20);
             this.textBox18.TabIndex = 44;
+            // 
+            // button9
+            // 
+            this.button9.Image = global::فروش.Properties.Resources.Musett_Aqcua_Finder;
+            this.button9.Location = new System.Drawing.Point(0, 211);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(41, 28);
+            this.button9.TabIndex = 43;
+            this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
             // textBox17
             // 
@@ -229,32 +243,6 @@
             this.label23.Size = new System.Drawing.Size(58, 13);
             this.label23.TabIndex = 34;
             this.label23.Text = "قسط بندی:";
-            // 
-            // button6
-            // 
-            this.button6.Location = new System.Drawing.Point(35, 251);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(125, 23);
-            this.button6.TabIndex = 33;
-            this.button6.Text = "محاسبه سودقسط بندی";
-            this.button6.UseVisualStyleBackColor = true;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
-            // 
-            // textBox14
-            // 
-            this.textBox14.Location = new System.Drawing.Point(166, 251);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(86, 20);
-            this.textBox14.TabIndex = 32;
-            // 
-            // label22
-            // 
-            this.label22.Location = new System.Drawing.Point(249, 248);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(88, 23);
-            this.label22.TabIndex = 31;
-            this.label22.Text = "سودقسط بندی:";
-            this.label22.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // textBox12
             // 
@@ -562,26 +550,6 @@
             this.textBox16.Size = new System.Drawing.Size(119, 20);
             this.textBox16.TabIndex = 47;
             // 
-            // button10
-            // 
-            this.button10.Image = global::فروش.Properties.Resources.Musett_Aqcua_Finder;
-            this.button10.Location = new System.Drawing.Point(0, 68);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(41, 27);
-            this.button10.TabIndex = 45;
-            this.button10.UseVisualStyleBackColor = true;
-            this.button10.Click += new System.EventHandler(this.button10_Click);
-            // 
-            // button9
-            // 
-            this.button9.Image = global::فروش.Properties.Resources.Musett_Aqcua_Finder;
-            this.button9.Location = new System.Drawing.Point(0, 211);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(41, 28);
-            this.button9.TabIndex = 43;
-            this.button9.UseVisualStyleBackColor = true;
-            this.button9.Click += new System.EventHandler(this.button9_Click);
-            // 
             // daryaft
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -622,9 +590,6 @@
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.TextBox textBox15;
         private System.Windows.Forms.Label label23;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.TextBox textBox14;
-        private System.Windows.Forms.Label label22;
         private System.Windows.Forms.TextBox textBox12;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.TextBox textBox11;

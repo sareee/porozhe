@@ -147,12 +147,6 @@
     <Compile Include="sal_center.Designer.cs">
       <DependentUpon>sal_center.cs</DependentUpon>
     </Compile>
-    <Compile Include="soud.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="soud.Designer.cs">
-      <DependentUpon>soud.cs</DependentUpon>
-    </Compile>
     <Compile Include="انتخاب کالا.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -298,9 +292,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="sal_center.resx">
       <DependentUpon>sal_center.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="soud.resx">
-      <DependentUpon>soud.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="انتخاب کالا.resx">
       <DependentUpon>انتخاب کالا.cs</DependentUpon>

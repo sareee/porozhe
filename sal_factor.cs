@@ -210,7 +210,7 @@ namespace فروش
             int min = DateTime.Today.Minute;
             int second = DateTime.Today.Second;
             string time = hou + ":" + min + ":" + second;
-            double k3=0;
+           // double k3=0;
             factor s = new factor();
           //  double o1=0d;
             for (int i = 0; i < dataGridView1.Rows.Count-1; i++)
@@ -242,7 +242,8 @@ namespace فروش
             //string c2 = "+";
             //this.dataGridView2.Rows.Add(new object[] { c1, c2, o1_str, cost_str });
             string temp = "";
-            daryaft r = new daryaft(ref code_cursor, ref name_cursor, ref k3, ref number, ref temp);
+            int cost_str1 = Convert.ToInt32(cost_str);
+            daryaft r = new daryaft(ref code_cursor, ref name_cursor, ref cost_str1, ref number, ref temp);
             r.ShowDialog();
         }
 

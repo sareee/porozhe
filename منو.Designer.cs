@@ -79,24 +79,8 @@
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.button3 = new System.Windows.Forms.Button();
-            this.bPersianCalenderTextBox2 = new BPersianCalender.BPersianCalenderTextBox();
-            this.bPersianCalenderTextBox1 = new BPersianCalender.BPersianCalenderTextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.kalaTableAdapter = new فروش.فروشDataSetTableAdapters.kalaTableAdapter();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.dataGridView3 = new System.Windows.Forms.DataGridView();
             this.dataGridView4 = new System.Windows.Forms.DataGridView();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -105,6 +89,54 @@
             this.Column18 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column19 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column20 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.dataGridView3 = new System.Windows.Forms.DataGridView();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.button3 = new System.Windows.Forms.Button();
+            this.bPersianCalenderTextBox2 = new BPersianCalender.BPersianCalenderTextBox();
+            this.bPersianCalenderTextBox1 = new BPersianCalender.BPersianCalenderTextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.kalaTableAdapter = new فروش.فروشDataSetTableAdapters.kalaTableAdapter();
+            this.گزارشاقساطToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.dataGridView5 = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.button4 = new System.Windows.Forms.Button();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.textBox16 = new System.Windows.Forms.TextBox();
+            this.label19 = new System.Windows.Forms.Label();
+            this.textBox12 = new System.Windows.Forms.TextBox();
+            this.label20 = new System.Windows.Forms.Label();
+            this.textBox15 = new System.Windows.Forms.TextBox();
+            this.textBox17 = new System.Windows.Forms.TextBox();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label26 = new System.Windows.Forms.Label();
+            this.label25 = new System.Windows.Forms.Label();
+            this.textBox14 = new System.Windows.Forms.TextBox();
+            this.label23 = new System.Windows.Forms.Label();
+            this.textBox18 = new System.Windows.Forms.TextBox();
+            this.label22 = new System.Windows.Forms.Label();
+            this.textBox13 = new System.Windows.Forms.TextBox();
             this.menuStrip1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -115,10 +147,13 @@
             this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.tabPage3.SuspendLayout();
-            this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
+            this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
+            this.tabPage4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).BeginInit();
+            this.groupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -210,7 +245,8 @@
             this.toolStripMenuItem9.AutoSize = false;
             this.toolStripMenuItem9.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripMenuItem10,
-            this.گزارشآنالیزروزانهToolStripMenuItem});
+            this.گزارشآنالیزروزانهToolStripMenuItem,
+            this.گزارشاقساطToolStripMenuItem});
             this.toolStripMenuItem9.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.toolStripMenuItem9.Image = global::فروش.Properties.Resources.document;
             this.toolStripMenuItem9.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -500,6 +536,7 @@
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tabPage3);
+            this.tabControl1.Controls.Add(this.tabPage4);
             this.tabControl1.Location = new System.Drawing.Point(0, 103);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -614,6 +651,75 @@
             this.tabPage3.UseVisualStyleBackColor = true;
             this.tabPage3.Click += new System.EventHandler(this.tabPage3_Click);
             // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.dataGridView4);
+            this.groupBox2.Location = new System.Drawing.Point(3, 268);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(952, 133);
+            this.groupBox2.TabIndex = 6;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "  عملیات پرداخت وجه";
+            // 
+            // dataGridView4
+            // 
+            this.dataGridView4.BackgroundColor = System.Drawing.Color.White;
+            this.dataGridView4.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dataGridView4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView4.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column13,
+            this.Column14,
+            this.Column15,
+            this.Column16,
+            this.Column17,
+            this.Column18,
+            this.Column19,
+            this.Column20});
+            this.dataGridView4.Location = new System.Drawing.Point(6, 32);
+            this.dataGridView4.Name = "dataGridView4";
+            this.dataGridView4.Size = new System.Drawing.Size(949, 122);
+            this.dataGridView4.TabIndex = 1;
+            // 
+            // Column13
+            // 
+            this.Column13.HeaderText = "نوع";
+            this.Column13.Name = "Column13";
+            // 
+            // Column14
+            // 
+            this.Column14.HeaderText = "مبلغ";
+            this.Column14.Name = "Column14";
+            // 
+            // Column15
+            // 
+            this.Column15.HeaderText = "پرداخت شده";
+            this.Column15.Name = "Column15";
+            // 
+            // Column16
+            // 
+            this.Column16.HeaderText = "نسیه";
+            this.Column16.Name = "Column16";
+            // 
+            // Column17
+            // 
+            this.Column17.HeaderText = "نقد از صندوق";
+            this.Column17.Name = "Column17";
+            // 
+            // Column18
+            // 
+            this.Column18.HeaderText = "خرج چک دریافتی";
+            this.Column18.Name = "Column18";
+            // 
+            // Column19
+            // 
+            this.Column19.HeaderText = "چک پرداختی";
+            this.Column19.Name = "Column19";
+            // 
+            // Column20
+            // 
+            this.Column20.HeaderText = "کارتخوان";
+            this.Column20.Name = "Column20";
+            // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.dataGridView3);
@@ -623,6 +729,66 @@
             this.groupBox1.TabIndex = 5;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "   عملیات دریافت وجه";
+            // 
+            // dataGridView3
+            // 
+            this.dataGridView3.BackgroundColor = System.Drawing.Color.White;
+            this.dataGridView3.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView3.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column5,
+            this.Column6,
+            this.Column7,
+            this.Column8,
+            this.Column9,
+            this.Column10,
+            this.Column11,
+            this.Column12});
+            this.dataGridView3.GridColor = System.Drawing.Color.DimGray;
+            this.dataGridView3.Location = new System.Drawing.Point(5, 34);
+            this.dataGridView3.Name = "dataGridView3";
+            this.dataGridView3.Size = new System.Drawing.Size(944, 191);
+            this.dataGridView3.TabIndex = 0;
+            // 
+            // Column5
+            // 
+            this.Column5.HeaderText = "نوع";
+            this.Column5.Name = "Column5";
+            // 
+            // Column6
+            // 
+            this.Column6.HeaderText = "مبلغ";
+            this.Column6.Name = "Column6";
+            // 
+            // Column7
+            // 
+            this.Column7.HeaderText = "دریافت شده";
+            this.Column7.Name = "Column7";
+            // 
+            // Column8
+            // 
+            this.Column8.HeaderText = "نسیه";
+            this.Column8.Name = "Column8";
+            // 
+            // Column9
+            // 
+            this.Column9.HeaderText = "نقد به صندوق";
+            this.Column9.Name = "Column9";
+            // 
+            // Column10
+            // 
+            this.Column10.HeaderText = "چک دریافتی";
+            this.Column10.Name = "Column10";
+            // 
+            // Column11
+            // 
+            this.Column11.HeaderText = "کارتخوان";
+            this.Column11.Name = "Column11";
+            // 
+            // Column12
+            // 
+            this.Column12.HeaderText = "قسط";
+            this.Column12.Name = "Column12";
             // 
             // button3
             // 
@@ -680,134 +846,292 @@
             // 
             this.kalaTableAdapter.ClearBeforeFill = true;
             // 
-            // groupBox2
+            // گزارشاقساطToolStripMenuItem
             // 
-            this.groupBox2.Controls.Add(this.dataGridView4);
-            this.groupBox2.Location = new System.Drawing.Point(3, 268);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(952, 133);
-            this.groupBox2.TabIndex = 6;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "  عملیات پرداخت وجه";
+            this.گزارشاقساطToolStripMenuItem.Name = "گزارشاقساطToolStripMenuItem";
+            this.گزارشاقساطToolStripMenuItem.Size = new System.Drawing.Size(190, 24);
+            this.گزارشاقساطToolStripMenuItem.Text = "گزارش اقساط";
             // 
-            // dataGridView3
+            // tabPage4
             // 
-            this.dataGridView3.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridView3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView3.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column5,
-            this.Column6,
-            this.Column7,
-            this.Column8,
-            this.Column9,
-            this.Column10,
-            this.Column11,
-            this.Column12});
-            this.dataGridView3.GridColor = System.Drawing.Color.DimGray;
-            this.dataGridView3.Location = new System.Drawing.Point(5, 34);
-            this.dataGridView3.Name = "dataGridView3";
-            this.dataGridView3.Size = new System.Drawing.Size(944, 191);
-            this.dataGridView3.TabIndex = 0;
+            this.tabPage4.Controls.Add(this.groupBox3);
+            this.tabPage4.Controls.Add(this.dataGridView5);
+            this.tabPage4.Controls.Add(this.button4);
+            this.tabPage4.Controls.Add(this.textBox2);
+            this.tabPage4.Controls.Add(this.label6);
+            this.tabPage4.Controls.Add(this.label7);
+            this.tabPage4.Controls.Add(this.comboBox3);
+            this.tabPage4.Location = new System.Drawing.Point(4, 22);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage4.Size = new System.Drawing.Size(958, 404);
+            this.tabPage4.TabIndex = 3;
+            this.tabPage4.UseVisualStyleBackColor = true;
             // 
-            // dataGridView4
+            // dataGridView5
             // 
-            this.dataGridView4.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridView4.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dataGridView4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView4.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column13,
-            this.Column14,
-            this.Column15,
-            this.Column16,
-            this.Column17,
-            this.Column18,
-            this.Column19,
-            this.Column20});
-            this.dataGridView4.Location = new System.Drawing.Point(6, 32);
-            this.dataGridView4.Name = "dataGridView4";
-            this.dataGridView4.Size = new System.Drawing.Size(949, 122);
-            this.dataGridView4.TabIndex = 1;
+            this.dataGridView5.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView5.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn1,
+            this.dataGridViewTextBoxColumn2,
+            this.dataGridViewTextBoxColumn3,
+            this.dataGridViewTextBoxColumn4,
+            this.dataGridViewTextBoxColumn5,
+            this.dataGridViewTextBoxColumn6,
+            this.dataGridViewTextBoxColumn7,
+            this.dataGridViewTextBoxColumn8,
+            this.dataGridViewTextBoxColumn9});
+            this.dataGridView5.Location = new System.Drawing.Point(8, 99);
+            this.dataGridView5.Name = "dataGridView5";
+            this.dataGridView5.Size = new System.Drawing.Size(661, 144);
+            this.dataGridView5.TabIndex = 7;
             // 
-            // Column5
+            // dataGridViewTextBoxColumn1
             // 
-            this.Column5.HeaderText = "نوع";
-            this.Column5.Name = "Column5";
+            this.dataGridViewTextBoxColumn1.HeaderText = "شماره فاکتور";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.Width = 50;
             // 
-            // Column6
+            // dataGridViewTextBoxColumn2
             // 
-            this.Column6.HeaderText = "مبلغ";
-            this.Column6.Name = "Column6";
+            this.dataGridViewTextBoxColumn2.HeaderText = "نام مشتری";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
             // 
-            // Column7
+            // dataGridViewTextBoxColumn3
             // 
-            this.Column7.HeaderText = "دریافت شده";
-            this.Column7.Name = "Column7";
+            this.dataGridViewTextBoxColumn3.HeaderText = "مبلغ فاکتور";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
             // 
-            // Column8
+            // dataGridViewTextBoxColumn4
             // 
-            this.Column8.HeaderText = "نسیه";
-            this.Column8.Name = "Column8";
+            this.dataGridViewTextBoxColumn4.HeaderText = "تاریخ قسط بندی";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
             // 
-            // Column9
+            // dataGridViewTextBoxColumn5
             // 
-            this.Column9.HeaderText = "نقد به صندوق";
-            this.Column9.Name = "Column9";
+            this.dataGridViewTextBoxColumn5.HeaderText = "تعداد اقساط";
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            this.dataGridViewTextBoxColumn5.Width = 40;
             // 
-            // Column10
+            // dataGridViewTextBoxColumn6
             // 
-            this.Column10.HeaderText = "چک دریافتی";
-            this.Column10.Name = "Column10";
+            this.dataGridViewTextBoxColumn6.HeaderText = "سررسیداول";
+            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
             // 
-            // Column11
+            // dataGridViewTextBoxColumn7
             // 
-            this.Column11.HeaderText = "کارتخوان";
-            this.Column11.Name = "Column11";
+            this.dataGridViewTextBoxColumn7.HeaderText = "نوع دوره";
+            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
             // 
-            // Column12
+            // dataGridViewTextBoxColumn8
             // 
-            this.Column12.HeaderText = "قسط";
-            this.Column12.Name = "Column12";
+            this.dataGridViewTextBoxColumn8.HeaderText = "هزینه دوره";
+            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
             // 
-            // Column13
+            // dataGridViewTextBoxColumn9
             // 
-            this.Column13.HeaderText = "نوع";
-            this.Column13.Name = "Column13";
+            this.dataGridViewTextBoxColumn9.HeaderText = "درصد جریمه";
+            this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
             // 
-            // Column14
+            // button4
             // 
-            this.Column14.HeaderText = "مبلغ";
-            this.Column14.Name = "Column14";
+            this.button4.Location = new System.Drawing.Point(214, 336);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(97, 23);
+            this.button4.TabIndex = 6;
+            this.button4.Text = "مشاهده اقساط";
+            this.button4.UseVisualStyleBackColor = true;
             // 
-            // Column15
+            // textBox2
             // 
-            this.Column15.HeaderText = "پرداخت شده";
-            this.Column15.Name = "Column15";
+            this.textBox2.Enabled = false;
+            this.textBox2.Location = new System.Drawing.Point(211, 47);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(100, 20);
+            this.textBox2.TabIndex = 11;
             // 
-            // Column16
+            // label6
             // 
-            this.Column16.HeaderText = "نسیه";
-            this.Column16.Name = "Column16";
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.label6.Enabled = false;
+            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label6.Location = new System.Drawing.Point(317, 50);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(0, 13);
+            this.label6.TabIndex = 10;
+            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // Column17
+            // label7
             // 
-            this.Column17.HeaderText = "نقد از صندوق";
-            this.Column17.Name = "Column17";
+            this.label7.Location = new System.Drawing.Point(657, 45);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(90, 23);
+            this.label7.TabIndex = 9;
+            this.label7.Text = "جستجو براساس:";
+            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // Column18
+            // comboBox3
             // 
-            this.Column18.HeaderText = "خرج چک دریافتی";
-            this.Column18.Name = "Column18";
+            this.comboBox3.FormattingEnabled = true;
+            this.comboBox3.Location = new System.Drawing.Point(530, 45);
+            this.comboBox3.Name = "comboBox3";
+            this.comboBox3.Size = new System.Drawing.Size(121, 21);
+            this.comboBox3.TabIndex = 8;
             // 
-            // Column19
+            // groupBox3
             // 
-            this.Column19.HeaderText = "چک پرداختی";
-            this.Column19.Name = "Column19";
+            this.groupBox3.Controls.Add(this.textBox16);
+            this.groupBox3.Controls.Add(this.label19);
+            this.groupBox3.Controls.Add(this.textBox12);
+            this.groupBox3.Controls.Add(this.label20);
+            this.groupBox3.Controls.Add(this.textBox15);
+            this.groupBox3.Controls.Add(this.textBox17);
+            this.groupBox3.Controls.Add(this.label21);
+            this.groupBox3.Controls.Add(this.label26);
+            this.groupBox3.Controls.Add(this.label25);
+            this.groupBox3.Controls.Add(this.textBox14);
+            this.groupBox3.Controls.Add(this.label23);
+            this.groupBox3.Controls.Add(this.textBox18);
+            this.groupBox3.Controls.Add(this.label22);
+            this.groupBox3.Controls.Add(this.textBox13);
+            this.groupBox3.Location = new System.Drawing.Point(554, 291);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(370, 100);
+            this.groupBox3.TabIndex = 19;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "خلاصه وضعیت اقساط";
             // 
-            // Column20
+            // textBox16
             // 
-            this.Column20.HeaderText = "کارتخوان";
-            this.Column20.Name = "Column20";
+            this.textBox16.Location = new System.Drawing.Point(344, 19);
+            this.textBox16.Multiline = true;
+            this.textBox16.Name = "textBox16";
+            this.textBox16.Size = new System.Drawing.Size(23, 12);
+            this.textBox16.TabIndex = 52;
+            // 
+            // label19
+            // 
+            this.label19.Location = new System.Drawing.Point(196, 16);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(142, 14);
+            this.label19.TabIndex = 53;
+            this.label19.Text = "پرداخت نشده و سررسید نشده";
+            this.label19.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // textBox12
+            // 
+            this.textBox12.BackColor = System.Drawing.Color.PaleGreen;
+            this.textBox12.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox12.Location = new System.Drawing.Point(167, 18);
+            this.textBox12.Multiline = true;
+            this.textBox12.Name = "textBox12";
+            this.textBox12.Size = new System.Drawing.Size(23, 12);
+            this.textBox12.TabIndex = 55;
+            // 
+            // label20
+            // 
+            this.label20.Location = new System.Drawing.Point(21, 16);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(136, 14);
+            this.label20.TabIndex = 56;
+            this.label20.Text = "پرداخت شده قبل از سر رسید";
+            this.label20.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // textBox15
+            // 
+            this.textBox15.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.textBox15.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox15.Location = new System.Drawing.Point(344, 37);
+            this.textBox15.Multiline = true;
+            this.textBox15.Name = "textBox15";
+            this.textBox15.Size = new System.Drawing.Size(23, 12);
+            this.textBox15.TabIndex = 65;
+            // 
+            // textBox17
+            // 
+            this.textBox17.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.textBox17.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox17.Location = new System.Drawing.Point(248, 84);
+            this.textBox17.Multiline = true;
+            this.textBox17.Name = "textBox17";
+            this.textBox17.Size = new System.Drawing.Size(23, 10);
+            this.textBox17.TabIndex = 64;
+            // 
+            // label21
+            // 
+            this.label21.Location = new System.Drawing.Point(196, 37);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(147, 13);
+            this.label21.TabIndex = 58;
+            this.label21.Text = "پرداخت نشده و سررسید رسیده";
+            this.label21.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label26
+            // 
+            this.label26.Location = new System.Drawing.Point(100, 82);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(141, 15);
+            this.label26.TabIndex = 66;
+            this.label26.Text = "بخشوده شده به طرف حساب";
+            this.label26.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label25
+            // 
+            this.label25.Location = new System.Drawing.Point(21, 55);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(140, 15);
+            this.label25.TabIndex = 62;
+            this.label25.Text = "پرداخت شده بعد از سررسید";
+            this.label25.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // textBox14
+            // 
+            this.textBox14.BackColor = System.Drawing.Color.DarkCyan;
+            this.textBox14.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox14.Location = new System.Drawing.Point(167, 57);
+            this.textBox14.Multiline = true;
+            this.textBox14.Name = "textBox14";
+            this.textBox14.Size = new System.Drawing.Size(23, 12);
+            this.textBox14.TabIndex = 57;
+            // 
+            // label23
+            // 
+            this.label23.Location = new System.Drawing.Point(191, 54);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(149, 15);
+            this.label23.TabIndex = 60;
+            this.label23.Text = "پرداخت نشده و سررسید گذشته";
+            this.label23.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // textBox18
+            // 
+            this.textBox18.BackColor = System.Drawing.Color.Red;
+            this.textBox18.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox18.Location = new System.Drawing.Point(344, 55);
+            this.textBox18.Multiline = true;
+            this.textBox18.Name = "textBox18";
+            this.textBox18.Size = new System.Drawing.Size(23, 12);
+            this.textBox18.TabIndex = 63;
+            // 
+            // label22
+            // 
+            this.label22.Location = new System.Drawing.Point(21, 38);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(140, 13);
+            this.label22.TabIndex = 59;
+            this.label22.Text = "پرداخت شده در سررسید";
+            this.label22.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // textBox13
+            // 
+            this.textBox13.BackColor = System.Drawing.Color.Lime;
+            this.textBox13.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox13.Location = new System.Drawing.Point(167, 38);
+            this.textBox13.Multiline = true;
+            this.textBox13.Name = "textBox13";
+            this.textBox13.Size = new System.Drawing.Size(23, 12);
+            this.textBox13.TabIndex = 54;
             // 
             // منو
             // 
@@ -835,10 +1159,15 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
-            this.groupBox1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
+            this.tabPage4.ResumeLayout(false);
+            this.tabPage4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).EndInit();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -921,5 +1250,37 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column18;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column19;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column20;
+        private System.Windows.Forms.ToolStripMenuItem گزارشاقساطToolStripMenuItem;
+        private System.Windows.Forms.TabPage tabPage4;
+        private System.Windows.Forms.DataGridView dataGridView5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn9;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.TextBox textBox16;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.TextBox textBox12;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.TextBox textBox15;
+        private System.Windows.Forms.TextBox textBox17;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.TextBox textBox14;
+        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.TextBox textBox18;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.TextBox textBox13;
     }
 }

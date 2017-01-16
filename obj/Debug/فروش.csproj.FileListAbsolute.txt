@@ -71,7 +71,6 @@ C:\Users\MAHSA\Desktop\کپی16دی\فروش\فروش\obj\Debug\فروش.garner_
 C:\Users\MAHSA\Desktop\کپی16دی\فروش\فروش\obj\Debug\فروش.information_customer.resources
 C:\Users\MAHSA\Desktop\کپی16دی\فروش\فروش\obj\Debug\فروش.Properties.Resources.resources
 C:\Users\MAHSA\Desktop\کپی16دی\فروش\فروش\obj\Debug\فروش.sal_center.resources
-C:\Users\MAHSA\Desktop\کپی16دی\فروش\فروش\obj\Debug\فروش.soud.resources
 C:\Users\MAHSA\Desktop\کپی16دی\فروش\فروش\obj\Debug\فروش.انتخاب_کالا.resources
 C:\Users\MAHSA\Desktop\کپی16دی\فروش\فروش\obj\Debug\فروش.تغییر_نام_کاربری_و_رمز_عبور.resources
 C:\Users\MAHSA\Desktop\کپی16دی\فروش\فروش\obj\Debug\فروش.ثبت_کالا.resources
