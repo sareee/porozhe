@@ -33,11 +33,12 @@ namespace فروش
 
         private void chek_pardakhti_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'فروشDataSet10.chek_pardakhti' table. You can move, or remove it, as needed.
-            this.chek_pardakhtiTableAdapter1.Fill(this.فروشDataSet10.chek_pardakhti);
-            // TODO: This line of code loads data into the 'فروشDataSet8.chek_pardakhti' table. You can move, or remove it, as needed.
-            this.chek_pardakhtiTableAdapter.Fill(this.فروشDataSet8.chek_pardakhti);
-
+            // TODO: This line of code loads data into the 'forushDataSet4.chek_pardakhti' table. You can move, or remove it, as needed.
+            this.chek_pardakhtiTableAdapter2.Fill(this.forushDataSet4.chek_pardakhti);
+            comboBox1.Items.Add("شماره چک");
+            comboBox1.Items.Add("نام بانک");
+            comboBox1.Items.Add("سررسید");
+            comboBox1.Items.Add("مبلغ");
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -57,6 +58,17 @@ namespace فروش
         {
             add_chek_pardakhti add = new add_chek_pardakhti();
             add.ShowDialog();
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            string kind = comboBox1.Text;
+            string value = textBox1.Text;
         }
     }
 }

@@ -30,6 +30,17 @@
         {
             this.components = new System.ComponentModel.Container();
             this.data = new System.Windows.Forms.DataGridView();
+            this.button1 = new System.Windows.Forms.Button();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.chekBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.فروشDataSet7 = new فروش.فروشDataSet7();
+            this.chekTableAdapter = new فروش.فروشDataSet7TableAdapters.chekTableAdapter();
+            this.forushDataSet3 = new فروش.forushDataSet3();
+            this.chekBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.chekTableAdapter1 = new فروش.forushDataSet3TableAdapters.chekTableAdapter();
             this.numberDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.timeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.codeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -38,17 +49,11 @@
             this.namehesabDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.statusDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.costDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.chekBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.فروشDataSet7 = new فروش.فروشDataSet7();
-            this.button1 = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.chekTableAdapter = new فروش.فروشDataSet7TableAdapters.chekTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.data)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chekBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.فروشDataSet7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.forushDataSet3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chekBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // data
@@ -64,71 +69,13 @@
             this.namehesabDataGridViewTextBoxColumn,
             this.statusDataGridViewTextBoxColumn,
             this.costDataGridViewTextBoxColumn});
-            this.data.DataSource = this.chekBindingSource;
+            this.data.DataSource = this.chekBindingSource1;
             this.data.Location = new System.Drawing.Point(2, 58);
             this.data.Name = "data";
             this.data.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.data.Size = new System.Drawing.Size(697, 256);
             this.data.TabIndex = 0;
             this.data.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.data_CellContentClick);
-            // 
-            // numberDataGridViewTextBoxColumn
-            // 
-            this.numberDataGridViewTextBoxColumn.DataPropertyName = "number";
-            this.numberDataGridViewTextBoxColumn.HeaderText = "شماره چک";
-            this.numberDataGridViewTextBoxColumn.Name = "numberDataGridViewTextBoxColumn";
-            // 
-            // timeDataGridViewTextBoxColumn
-            // 
-            this.timeDataGridViewTextBoxColumn.DataPropertyName = "time";
-            this.timeDataGridViewTextBoxColumn.HeaderText = "سررسید";
-            this.timeDataGridViewTextBoxColumn.Name = "timeDataGridViewTextBoxColumn";
-            // 
-            // codeDataGridViewTextBoxColumn
-            // 
-            this.codeDataGridViewTextBoxColumn.DataPropertyName = "code";
-            this.codeDataGridViewTextBoxColumn.HeaderText = "کد شعبه";
-            this.codeDataGridViewTextBoxColumn.Name = "codeDataGridViewTextBoxColumn";
-            // 
-            // nameDataGridViewTextBoxColumn
-            // 
-            this.nameDataGridViewTextBoxColumn.DataPropertyName = "name";
-            this.nameDataGridViewTextBoxColumn.HeaderText = "نام شعبه";
-            this.nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
-            // 
-            // numhesabDataGridViewTextBoxColumn
-            // 
-            this.numhesabDataGridViewTextBoxColumn.DataPropertyName = "num_hesab";
-            this.numhesabDataGridViewTextBoxColumn.HeaderText = "شماره حساب";
-            this.numhesabDataGridViewTextBoxColumn.Name = "numhesabDataGridViewTextBoxColumn";
-            // 
-            // namehesabDataGridViewTextBoxColumn
-            // 
-            this.namehesabDataGridViewTextBoxColumn.DataPropertyName = "name_hesab";
-            this.namehesabDataGridViewTextBoxColumn.HeaderText = "نام صاحب حساب";
-            this.namehesabDataGridViewTextBoxColumn.Name = "namehesabDataGridViewTextBoxColumn";
-            // 
-            // statusDataGridViewTextBoxColumn
-            // 
-            this.statusDataGridViewTextBoxColumn.DataPropertyName = "status";
-            this.statusDataGridViewTextBoxColumn.HeaderText = "وضعیت چک";
-            this.statusDataGridViewTextBoxColumn.Name = "statusDataGridViewTextBoxColumn";
-            // 
-            // costDataGridViewTextBoxColumn
-            // 
-            this.costDataGridViewTextBoxColumn.DataPropertyName = "cost";
-            this.costDataGridViewTextBoxColumn.HeaderText = "مبلغ";
-            this.costDataGridViewTextBoxColumn.Name = "costDataGridViewTextBoxColumn";
-            // 
-            // chekBindingSource
-            // 
-            this.chekBindingSource.DataMember = "chek";
-            this.chekBindingSource.DataSource = this.فروشDataSet7;
-            // 
-            // فروشDataSet7
-            // 
-            this.فروشDataSet7.DataSetName = "فروشDataSet7";
-            this.فروشDataSet7.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // button1
             // 
@@ -173,10 +120,83 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(137, 20);
             this.textBox1.TabIndex = 5;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
+            // chekBindingSource
+            // 
+            this.chekBindingSource.DataMember = "chek";
+            this.chekBindingSource.DataSource = this.فروشDataSet7;
+            // 
+            // فروشDataSet7
+            // 
+            this.فروشDataSet7.DataSetName = "فروشDataSet7";
+            this.فروشDataSet7.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // chekTableAdapter
             // 
             this.chekTableAdapter.ClearBeforeFill = true;
+            // 
+            // forushDataSet3
+            // 
+            this.forushDataSet3.DataSetName = "forushDataSet3";
+            this.forushDataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // chekBindingSource1
+            // 
+            this.chekBindingSource1.DataMember = "chek";
+            this.chekBindingSource1.DataSource = this.forushDataSet3;
+            // 
+            // chekTableAdapter1
+            // 
+            this.chekTableAdapter1.ClearBeforeFill = true;
+            // 
+            // numberDataGridViewTextBoxColumn
+            // 
+            this.numberDataGridViewTextBoxColumn.DataPropertyName = "number";
+            this.numberDataGridViewTextBoxColumn.HeaderText = "شماره چک";
+            this.numberDataGridViewTextBoxColumn.Name = "numberDataGridViewTextBoxColumn";
+            // 
+            // timeDataGridViewTextBoxColumn
+            // 
+            this.timeDataGridViewTextBoxColumn.DataPropertyName = "time";
+            this.timeDataGridViewTextBoxColumn.HeaderText = "سررسید";
+            this.timeDataGridViewTextBoxColumn.Name = "timeDataGridViewTextBoxColumn";
+            // 
+            // codeDataGridViewTextBoxColumn
+            // 
+            this.codeDataGridViewTextBoxColumn.DataPropertyName = "code";
+            this.codeDataGridViewTextBoxColumn.HeaderText = "کد شعبه";
+            this.codeDataGridViewTextBoxColumn.Name = "codeDataGridViewTextBoxColumn";
+            // 
+            // nameDataGridViewTextBoxColumn
+            // 
+            this.nameDataGridViewTextBoxColumn.DataPropertyName = "name";
+            this.nameDataGridViewTextBoxColumn.HeaderText = "نام شعبه";
+            this.nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
+            // 
+            // numhesabDataGridViewTextBoxColumn
+            // 
+            this.numhesabDataGridViewTextBoxColumn.DataPropertyName = "num_hesab";
+            this.numhesabDataGridViewTextBoxColumn.HeaderText = "شماره حساب";
+            this.numhesabDataGridViewTextBoxColumn.Name = "numhesabDataGridViewTextBoxColumn";
+            // 
+            // namehesabDataGridViewTextBoxColumn
+            // 
+            this.namehesabDataGridViewTextBoxColumn.DataPropertyName = "name_hesab";
+            this.namehesabDataGridViewTextBoxColumn.HeaderText = "نام صاحب حساب";
+            this.namehesabDataGridViewTextBoxColumn.Name = "namehesabDataGridViewTextBoxColumn";
+            // 
+            // statusDataGridViewTextBoxColumn
+            // 
+            this.statusDataGridViewTextBoxColumn.DataPropertyName = "status";
+            this.statusDataGridViewTextBoxColumn.HeaderText = "وضعیت";
+            this.statusDataGridViewTextBoxColumn.Name = "statusDataGridViewTextBoxColumn";
+            // 
+            // costDataGridViewTextBoxColumn
+            // 
+            this.costDataGridViewTextBoxColumn.DataPropertyName = "cost";
+            this.costDataGridViewTextBoxColumn.HeaderText = "مبلغ";
+            this.costDataGridViewTextBoxColumn.Name = "costDataGridViewTextBoxColumn";
             // 
             // chek
             // 
@@ -195,6 +215,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.data)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chekBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.فروشDataSet7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.forushDataSet3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chekBindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -211,6 +233,9 @@
         private فروشDataSet7 فروشDataSet7;
         private System.Windows.Forms.BindingSource chekBindingSource;
         private فروشDataSet7TableAdapters.chekTableAdapter chekTableAdapter;
+        private forushDataSet3 forushDataSet3;
+        private System.Windows.Forms.BindingSource chekBindingSource1;
+        private forushDataSet3TableAdapters.chekTableAdapter chekTableAdapter1;
         private System.Windows.Forms.DataGridViewTextBoxColumn numberDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn timeDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn codeDataGridViewTextBoxColumn;

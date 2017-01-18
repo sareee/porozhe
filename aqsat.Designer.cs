@@ -159,6 +159,7 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(100, 20);
             this.textBox1.TabIndex = 5;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // aqsat
             // 
@@ -174,6 +175,7 @@
             this.Name = "aqsat";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.Text = "اقساط";
+            this.Load += new System.EventHandler(this.aqsat_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -25,12 +25,11 @@ namespace فروش
             this.h = h;
             this.i = i;
         }
-
         private void chek_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'فروشDataSet7.chek' table. You can move, or remove it, as needed.
-            this.chekTableAdapter.Fill(this.فروشDataSet7.chek);
-
+            // TODO: This line of code loads data into the 'forushDataSet3.chek' table. You can move, or remove it, as needed.
+            this.chekTableAdapter1.Fill(this.forushDataSet3.chek);
+            comboBox1.Items.Add("شماره چک");
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -49,6 +48,16 @@ namespace فروش
         private void data_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            DataTable dt;
+            this.value = textBox1.Text;
+            this.kind = comboBox1.Text;
+            sabt_hazine ah = new sabt_hazine();
+            dt = ah.searcg_check_daryafti(kind, value);
+            data.DataSource = dt;
         }
     }
 }

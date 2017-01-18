@@ -17,7 +17,7 @@ namespace فروش
         public int N = 0;
         public void connect(string sql)
         {
-            SqlConnection conn = new SqlConnection("Data Source=.;Initial Catalog=فروش;Integrated Security=True");
+            SqlConnection conn = new SqlConnection("Data Source=.;Initial Catalog=forush;Integrated Security=True");
             SqlCommand cmd = new SqlCommand();
             DataTable dt = new DataTable();
             SqlDataReader dr;
@@ -28,9 +28,10 @@ namespace فروش
             dt.Load(dr);
             conn.Close();
         }
+        int s;
         public void connect3(string sql)
         {
-            SqlConnection conn = new SqlConnection("Data Source=.;Initial Catalog=فروش;Integrated Security=True");
+            SqlConnection conn = new SqlConnection("Data Source=.;Initial Catalog=forush;Integrated Security=True");
             SqlCommand cmd = new SqlCommand();
             DataTable dt = new DataTable();
             cmd.Connection = conn;
@@ -42,7 +43,7 @@ namespace فروش
         }
         public void connect4(string sql)
         {
-            SqlConnection conn = new SqlConnection("Data Source=.;Initial Catalog=فروش;Integrated Security=True");
+            SqlConnection conn = new SqlConnection("Data Source=.;Initial Catalog=forush;Integrated Security=True");
             SqlCommand cmd = new SqlCommand();
             DataTable dt = new DataTable();
             cmd.Connection = conn;
@@ -64,7 +65,12 @@ namespace فروش
         }
         public void save_buy_factor(int number, string code_kala, string name_kala, string mark_kala, string date_kala, string date, string code_cursor, string time, string code_gerner, string comment)
         {
-            string sql = "insert into buy-factor values("+number+",'"+code_kala+"','"+name_kala+"','"+mark_kala+"')";
+            string sql = "insert into buy_factor values("+number+",'"+code_kala+"','"+name_kala+"','"+mark_kala+"','"+date_kala+"','"+date+"','"+code_cursor+"','"+time+"','"+code_gerner+"','"+comment+"')";
+            connect(sql);
+        }
+        public void save_buy_factor2(int number,string code_seller,string date,int cost)
+        {
+            string sql = "insert into buy_factor_2 values("+number+",'"+code_seller+"','"+date+"',"+cost+")";
             connect(sql);
         }
         public void cost(string a, string b, string c, string d)
@@ -79,8 +85,58 @@ namespace فروش
         }
         public void numberic()
         {
-            string sql = "declare @num int=0 select @num=number+1 from sal_factor select @num ";
+            string sql = "declare @num int=1 select @num=number+1 from sal_factor select @num ";
             connect4(sql);
+        }
+        public void numberic_buy_factor()
+        {
+            string sql = "declare @num int=1 select @num=number+1 from buy_factor select @num ";
+            connect4(sql);
+        }
+        public void resive(int number,int takhfif,int naqdi,int kartkhan,int digari,int qesti,string sanduq,string hesab_code,string number_kart,string comment,string code_cursor)
+        {
+            string sql = "insert into resive values (" + number + "," + takhfif + "," + naqdi + "," + kartkhan + "," + digari + "," + qesti + ",'" + sanduq + "','" + hesab_code + "','" + number_kart + "','" + comment + "','" + code_cursor + "')";
+            connect(sql);
+        }
+        public void pardakht(int number,int takhfif,int naqdi,int kartkhan,string sanduq,string hesab_code,string number_kart,string comment,string code_saller)
+        {
+            string sql = "insert into pardakht values ("+number+","+takhfif+","+naqdi+","+kartkhan+",'"+sanduq+"','"+hesab_code+"','"+number_kart+"','"+comment+"','"+code_saller+"')";
+            connect(sql);
+        }
+        public void gozaresh_rozane(string date_1,string date_2)
+        {
+            string sql = "select sum(cost) from sal_factor2 where date between '"+date_1+"' and '"+date_2+"' ";
+            connect3(sql);
+        }
+        public void gozaresh_rozane2(string date_1, string date_2)
+        {
+               string sql = "select sum(naqdi) from resive where number in(select number from sal_factor2 where date between '" + date_1 + "' and '" + date_2 + "' )";
+               connect3(sql);
+        }
+        public void gozaresh_rozane3(string date_1, string date_2)
+        {
+            string sql = "select sum(kartkhan) from resive where number in(select number from sal_factor2 where date between '" + date_1 + "' and '" + date_2 + "' )";
+            connect3(sql);
+        }
+        public void gozaresh_rozane4(string date_1, string date_2)
+        {
+            string sql = "select sum(qesti) from resive where number in(select number from sal_factor2 where date between '" + date_1 + "' and '" + date_2 + "' )";
+            connect3(sql);
+        }
+        public void gozaresh_pardakht1(string date_1, string date_2)
+        {
+            string sql = "select sum(cost) from buy_factor_2 where date between '" + date_1 + "' and '" + date_2 + "'";
+            connect3(sql);
+        }
+        public void gozaresh_pardakht2(string date_1,string date_2)
+        {
+            string sql = "select sum(naqdi) from pardakht where number in(select number from buy_factor_2 where date between '" + date_1 + "' and '" + date_2 + "')";
+            connect3(sql);
+        }
+        public void gozaresh_pardakht3(string date_1, string date_2)
+        {
+            string sql = "select sum(kartkhan) from pardakht where number in(select number from buy_factor_2 where date between '" + date_1 + "' and '" + date_2 + "')";
+            connect3(sql);
         }
     }
 }
