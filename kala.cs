@@ -16,7 +16,7 @@ namespace فروش
         public string summ;
         public void connect(string sql)
         {
-            SqlConnection conn = new SqlConnection("Data Source=.;Initial Catalog=فروش;Integrated Security=True");
+            SqlConnection conn = new SqlConnection("Data Source=.;Initial Catalog=forush;Integrated Security=True");
             SqlCommand cmd = new SqlCommand();
             DataTable dt = new DataTable();
             SqlDataReader dr;
@@ -29,7 +29,7 @@ namespace فروش
         }
         public DataTable connect2(string sql)
         {
-            SqlConnection conn = new SqlConnection("Data Source=.;Initial Catalog=فروش;Integrated Security=True");
+            SqlConnection conn = new SqlConnection("Data Source=.;Initial Catalog=forush;Integrated Security=True");
             SqlCommand cmd = new SqlCommand();
             DataTable dt = new DataTable();
             SqlDataReader dr;
@@ -43,7 +43,7 @@ namespace فروش
         }
         public void connect3(string sql)
         {
-            SqlConnection conn = new SqlConnection("Data Source=.;Initial Catalog=فروش;Integrated Security=True");
+            SqlConnection conn = new SqlConnection("Data Source=.;Initial Catalog=forush;Integrated Security=True");
             SqlCommand cmd = new SqlCommand();
             DataTable dt = new DataTable();
             cmd.Connection = conn;
@@ -97,13 +97,26 @@ namespace فروش
         {
             string sql = "delete from kala where code='"+code+"' and name='"+name+"' and brand='"+brand+"' and date_old='"+date+"'";
             connect(sql);
-            MessageBox.Show("کالا حذف شد", "اعلام نتیجه عملیات");
+           // MessageBox.Show("کالا حذف شد", "اعلام نتیجه عملیات");
         }
         public void sum(string a,string b,string c, string d)
         {
             string sql = "select sum(cost_sal) from kala where code='"+a+"' and name='"+b+"' and brand='"+c+"' and date_old='"+d+"'";
             connect3(sql);
 
+        }
+        public void sum_buy_factor(string a, string b, string c, string d)
+        {
+            string sql = "select sum(cost_buy) from kala where code='" + a + "' and name='" + b + "' and brand='" + c + "' and date_old='" + d + "'";
+            connect3(sql);
+
+        }
+        public DataTable search(string item)
+        {
+            DataTable dt = null;
+            string sql = "select* from kala where date_old like '"+item+"%'";
+            connect2(sql);
+            return dt;
         }
     }
 }
