@@ -12,13 +12,16 @@ namespace فروش
 {
     public partial class qest_bandi : Form
     {
-        public int number;
-        public double cost;
+        public int number,qesti;
         public string code_cursor, name_cursor;
-        public qest_bandi(ref int number,ref double cost,ref string code_cursor,ref string name_cursor)
+        public qest_bandi(ref int number,ref int qesti,ref string code_cursor,ref string name_cursor)
         {
             InitializeComponent();
            // comboBox1.Items.Add("");
+            this.number = number;
+            this.qesti = qesti;
+            this.code_cursor = code_cursor;
+            this.name_cursor = name_cursor;
             comboBox1.Items.Add("1");
             comboBox1.Items.Add("3");
             comboBox1.Items.Add("6");
@@ -62,14 +65,47 @@ namespace فروش
 
         private void button4_Click(object sender, EventArgs e)
         {
-            //if (flag == 0)
-            //{
-
-            //}
-            // MessageBox.Show("قبلا ذخیره شده است");
-            //محاسبه_سود_قسط_بندی m = new محاسبه_سود_قسط_بندی();
-            //m.ShowDialog();
-            //ghest_bandi gh = new ghest_bandi(); // ذخیره تیبل (شماره فاکتور-ایدی طرف حساب-تاریخ شروع-تعداد اقساط-مبلغ فاکتور-نوع دوره-درصدجریمه)
+            try
+            {
+                int cost = 0;
+                int darsad = 1;
+                int number = Convert.ToInt32(textBox1.Text);
+                string code_cursor = textBox3.Text;
+                if (textBox2.Text != "")
+                {
+                    cost = Convert.ToInt32(textBox2.Text);
+                }
+                string date = bPersianCalenderTextBox1.Text;
+                string count = textBox5.Text;
+                string date_sar_resid = bPersianCalenderTextBox2.Text;
+                if (textBox9.Text != "")
+                {
+                    darsad = Convert.ToInt32(textBox9.Text);
+                }
+                int day = Convert.ToInt32(textBox10.Text);
+                string comment = textBox6.Text;
+                aqsat_1 aq = new aqsat_1();
+                aq.save(number, code_cursor, cost, date, count, date_sar_resid, darsad, day, comment);
+                for (int i = 0; i < dataGridView1.Rows.Count - 1; i++)
+                {
+                    cost = Convert.ToInt32(this.dataGridView1.Rows[i].Cells[2].Value.ToString());
+                    date_sar_resid = this.dataGridView1.Rows[i].Cells[1].Value.ToString();
+                    string status = this.dataGridView1.Rows[i].Cells[3].Value.ToString();
+                    aq.save2(number, cost, date_sar_resid, status);
+                    //kala k = new kala();
+                    //k.sum(a, b, c, d);
+                    //k1 = k.summ;
+                    //int k2 = Convert.ToInt32(k1);
+                    //k3+=k2;
+                    //s.cost(a, b, c, d);
+                    //o1 += o;
+                }
+                MessageBox.Show("ذخیره اقساط انجام شد", "پیغام", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1);
+            }
+            catch
+            {
+                MessageBox.Show("خطا در ذخیره اقساط ,بررسی کنید نوع و تعداد اقساط را وارد کرده باشید", "خطا", MessageBoxButtons.OKCancel, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1);
+            }
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -83,6 +119,7 @@ namespace فروش
         private void comboBox1_SelectedIndexChanged_1(object sender, EventArgs e)
         {
             radioButton1.Checked = true;
+            textBox7.Text = "1";
             //textBox7.Text = "1";
             //textBox1.Text = "202";
             //textBox2.Text = "2000000";
@@ -91,14 +128,14 @@ namespace فروش
             //textBox4.Enabled = false;
             //textBox3.Text = "1202";
             //textBox3.Enabled = false;
-            //switch (comboBox1.Text)
-            //{
-            //    case ("1 "): textBox5.Text = "1"; break;
-            //    case ("3 ماهه"): textBox5.Text = "3"; break;
-            //    case ("6 ماهه"): textBox5.Text = "6"; break;
-            //    case ("12 ماهه"): textBox5.Text = "12"; break;
-            //    case ("18 ماهه"): textBox5.Text = "18"; break;
-            //}
+            switch (comboBox1.Text)
+            {
+                case ("1 "): textBox5.Text = "1"; break;
+                case ("3 "): textBox5.Text = "3"; break;
+                case ("6 "): textBox5.Text = "6"; break;
+                case ("12 "): textBox5.Text = "12"; break;
+                case ("18 "): textBox5.Text = "18"; break;
+            }
         }
 
         private void checkBox1_CheckedChanged_1(object sender, EventArgs e)
@@ -188,13 +225,13 @@ namespace فروش
             //else
             //{
                 dataGridView1.Rows.Clear();
-                label27.Text = textBox2.Text;
+                label27.Text =Convert.ToString (Convert.ToDouble(textBox2.Text) + Convert.ToDouble(textBox22.Text));
                 string shomare_faktor = textBox1.Text;
                 string custor = textBox3.Text;
                 string cost_total = textBox2.Text;
-                string date_today = dateTimePicker1.Text;
+                string date_today = bPersianCalenderTextBox1.Text;//dateTimePicker1.Text;
                 string tedad_aqsat = textBox5.Text;
-                string date_sar_resid = dateTimePicker2.Text;
+                string date_sar_resid =bPersianCalenderTextBox2.Text; // dateTimePicker2.Text;
                 double cost1 = Convert.ToInt32(cost_total) / Convert.ToInt32(tedad_aqsat);
                 int cost2 = Convert.ToInt32(cost_total) / Convert.ToInt32(tedad_aqsat);
                 double cost3 = cost1 - cost2;
@@ -207,7 +244,7 @@ namespace فروش
                     if (i == 0)
                     {
                         cost1 = cost3 + cost2;
-                        date1 = date[1] + "/" + date[0] + "/" + date[2];
+                        date1 = date[0] + "/" + date[1] + "/" + date[2];
                     }
                     else
                     {
@@ -215,8 +252,8 @@ namespace فروش
                         if (radioButton1.Checked)
                         {
                             dore = "ماهانه";
-                            t2 = Convert.ToInt32(date[1]);
-                            t = Convert.ToInt32(date[0]) + (Convert.ToInt32(textBox7.Text));
+                            t2 = Convert.ToInt32(date[0]);
+                            t = Convert.ToInt32(date[1]) + (Convert.ToInt32(textBox7.Text));
                             t1 = Convert.ToInt32(date[2]);
                             if (t > 12)
                             {
@@ -232,13 +269,13 @@ namespace فروش
                         else if (radioButton2.Checked)
                         {
                             dore = "هفتگی";
-                            t2 = Convert.ToInt32(date[1]) + 7;
+                            t2 = Convert.ToInt32(date[0]) + 7;
                             t1 = Convert.ToInt32(date[2]);
-                            t = Convert.ToInt32(date[0]);
+                            t = Convert.ToInt32(date[1]);
                             if (t2 > 30)
                             {
                                 t2 = t2 - 30;
-                                t = Convert.ToInt32(date[0]) + 1;
+                                t = Convert.ToInt32(date[1]) + 1;
                                 if (t > 12)
                                 {
                                     t = t - 12;
@@ -258,13 +295,13 @@ namespace فروش
                         else if (radioButton3.Checked)
                         {
                             dore = "روزانه";
-                            t2 = Convert.ToInt32(date[1]) + (Convert.ToInt32(textBox8.Text));
+                            t2 = Convert.ToInt32(date[0]) + (Convert.ToInt32(textBox8.Text));
                             t1 = Convert.ToInt32(date[2]);
-                            t = Convert.ToInt32(date[0]);
+                            t = Convert.ToInt32(date[1]);
                             if (t2 > 30)
                             {
                                 t2 = t2 - 30;
-                                t = Convert.ToInt32(date[0]) + 1;
+                                t = Convert.ToInt32(date[1]) + 1;
                                 if (t > 12)
                                 {
                                     t = t - 12;
@@ -281,8 +318,8 @@ namespace فروش
                                 date1 = t2 + "/" + t + "/" + t1;
                             }
                         }
-                        date[1] = Convert.ToString(t2);
-                        date[0] = Convert.ToString(t);
+                        date[0] = Convert.ToString(t2);
+                        date[1] = Convert.ToString(t);
                         date[2] = Convert.ToString(t1);
                     }
                     this.dataGridView1.Rows.Add(new object[] { this.dataGridView1.Rows.Count, date1, cost1, "پرداخت نشده" });
@@ -342,16 +379,20 @@ namespace فروش
                 {
                     double t = (Convert.ToDouble(textBox2.Text) * 18) / 2400;
                     double t1 = Convert.ToDouble(textBox5.Text);
-                    int mah =Convert.ToInt32( comboBox1.Text);
-                    double t2 = ((t1 + 1) * t)*(mah/1200);
+                   // int mah =Convert.ToInt32(comboBox1.Text);
+                    double t2 = ((t1 + 1) * t);
+                   // double t11=mah / 1200;
+                   // double t111 = t2 / t11;
                     textBox22.Text = Convert.ToString(t2);
                 }
                 else if (s == "اعمال سود دلخواه")
                 {
-                    decimal t = (Convert.ToDecimal(textBox2.Text) * (Convert.ToDecimal(textBox20.Text))) / 2400;
-                    int mah = Convert.ToInt32(comboBox1.Text);
-                    decimal t1 = Convert.ToDecimal(textBox5.Text);
-                    decimal t2 = ((t1 + 1) * t) * (mah / 1200);
+                    double t = (Convert.ToDouble(textBox2.Text) * (Convert.ToDouble(textBox20.Text))) / 2400;
+                   // int mah = Convert.ToInt32(comboBox1.Text);
+                    double t1 = Convert.ToDouble(textBox5.Text);
+                    double t2 = ((t1 + 1) * t);
+                   // double t11 = mah / 1200;
+                 //   double t111 = t2 / t11;
                     textBox22.Text = Convert.ToString(t2);
                 }
                 else
@@ -374,6 +415,25 @@ namespace فروش
         {
             add_chek_pardakhti acp = new add_chek_pardakhti();
             acp.ShowDialog();
+        }
+
+        private void qest_bandi_Load(object sender, EventArgs e)
+        {
+            textBox1.Text =Convert.ToString( number);
+            textBox2.Text =Convert.ToString( qesti);
+            textBox3.Text = Convert.ToString(code_cursor);
+            textBox4.Text = Convert.ToString(name_cursor);
+            
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
